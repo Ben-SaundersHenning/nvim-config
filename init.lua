@@ -17,24 +17,25 @@ require('config.mappings')
 -- list of package calls.
 require('config.lazy')
 
--- Default setup for Comment
--- require('plugins.comment')
-
--- Default setup for the gruvbox colorscheme
--- require('plugins.gruvbox')
-
--- Default setup for nvim-tree (file explorer)
--- require('plugins.nvim-tree')
-
-    -- Default setup for nvim-web-devicons (dependency of nvim-tree)
-    -- require('plugins.nvim-web-devicons')
-
-
--- Treesitter
--- require('plugins.nvim-treesitter')
-
--- LSP Config
--- require('plugins.nvim-lspconfig')
-
--- Coq AutoCompletion
--- require('plugins.coq_nvim')
+-- plenary
+-- nvim-web-devicons
+-- nvim-lspconfig
+-- mason.nvim
+-- mason-lspconfig.nvim
+-- trouble.nvim
+-- goto-preview
+-- nvim-navic
+-- lsp_signature.nvim
+-- null-ls_nvim
+-- nvim-treesitter
+-- nvim-cmp
+-- luasnip
+--
+-- cmp-nvim-lsp
+-- cmp-nvim-lua
+-- cmp-buffer
+-- cmp-path
+-- cmp_luasnip
+--
+-- telescope
+-- nvim-colorizer

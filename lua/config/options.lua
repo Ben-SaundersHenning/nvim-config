@@ -68,5 +68,5 @@ opt.termguicolors = true
 opt.wildmenu = true
 
 -- Disable netrw, the default Vim file exploerer
--- vim.g.loaded_netrw = 1
--- vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

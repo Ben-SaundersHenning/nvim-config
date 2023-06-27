@@ -15,8 +15,7 @@ return {
                 padding = true,
                 ---Whether the cursor should stay at its position
                 sticky = true,
-                ---Lines to be ignored while (un)comment
-                ignore = nil,
+                ---Lines to be ignored while (un)comment ignore = nil,
 
                 ---LHS of toggle mappings in NORMAL mode
                 toggler = {
@@ -72,5 +71,56 @@ return {
         'tpope/vim-obsession'
 
     },
+
+    -- NerdTree file explorer
+    {
+
+        'nvim-tree/nvim-tree.lua',
+
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        },
+
+        config = function ()
+
+            require('nvim-tree').setup({})
+
+        end
+
+    },
+
+    -- Trouble: show issues
+    {
+
+        'folke/trouble.nvim',
+
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        },
+
+        config = function ()
+
+            require('trouble').setup({})
+
+        end
+
+    },
+
+    -- FTerm: a floating terminal
+    {
+
+        'numToStr/FTerm.nvim',
+
+        config = function ()
+
+            require('FTerm').setup({
+
+                vim.api.nvim_create_user_command('FTermToggle', require('FTerm').toggle, { bang = true })
+
+            })
+
+        end
+
+    }
 
 }

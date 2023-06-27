@@ -25,14 +25,15 @@ return {
 
             require('mason-lspconfig').setup({ensure_installed = {
 
-                'lua_ls',
-                'clangd',
-                'pyright',
-                'rust_analyzer',
-                'html',
-                'cssls',
-                'quick_lint_js',
-                'tsserver',
+                'lua_ls', -- Lua
+                'clangd', -- C
+                'csharp_ls', -- C#
+                'pyright', -- Python
+                'rust_analyzer', -- Rust
+                'html', -- HTML
+                'cssls', -- CSS
+                'quick_lint_js', -- Javscript
+                'tsserver', -- Javascript
 
             }})
 
@@ -85,6 +86,7 @@ return {
 
                     {name = 'nvim_lsp'},
                     {name = 'luasnip'},
+                    {name = 'nvim_lsp_signature_help'},
 
                 }, {
 
@@ -109,6 +111,13 @@ return {
         {
 
             'hrsh7th/cmp-nvim-lsp',
+
+        },
+
+        -- Signature Help
+        {
+
+            'hrsh7th/cmp-nvim-lsp-signature-help'
 
         },
 
@@ -138,16 +147,6 @@ return {
 
             })
 
-            -- Setup language servers for CMP
-            -- lspconfig.clangd.setup({capabilities = capabilities})
-            -- lspconfig.lua_ls.setup({capabilities = capabilities})
-            -- lspconfig.pyright.setup({capabilities = capabilities})
-            -- lspconfig.rust_analyzer.setup({capabilities = capabilities})
-            -- lspconfig.html.setup({capabilities = capabilities, init_options = {embeddedLanguages = {css = true, javascript = true}}})
-            -- lspconfig.tsserver.setup({capabilities = capabilities})
-            -- lspconfig.cssls.setup({capabilities = capabilities})
-            -- lspconfig..setup({capabilities = capabilities})
-            --
             -- Global mappings These are all defaults.
 
             -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -186,6 +185,33 @@ return {
                 end, opts)
               end,
             })
+
+        end
+
+    },
+
+    -- ALL FROM ABSTRACT
+    {
+
+        'rafamadriz/friendly-snippets',
+
+        after = 'LuaSnip',
+
+    },
+
+    { 'hrsh7th/cmp-nvim-lsp', after='nvim-cmp' }, -- nvim-cmp source for neovim builtin LSP client
+	{ 'hrsh7th/cmp-nvim-lua', after='nvim-cmp' }, -- nvim-cmp source for nvim lua
+	{ 'hrsh7th/cmp-buffer', after='nvim-cmp' }, -- nvim-cmp source for buffer words.
+	{ 'hrsh7th/cmp-path', after='nvim-cmp' }, -- nvim-cmp source for filesystem paths.
+	{ 'saadparwaiz1/cmp_luasnip', after='nvim-cmp' }, -- luasnip completion source for nvim-cmp
+
+    {
+
+        'norcalli/nvim-colorizer.lua',
+
+        config = function()
+
+            require('colorizer').setup({})
 
         end
 

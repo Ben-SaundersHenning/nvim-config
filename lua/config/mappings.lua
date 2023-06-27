@@ -23,3 +23,12 @@ set('n', '<leader>g', ':nohlsearch<CR>', { desc = 'Clear search highlights' })
 
 -- Bring up telescope (this mapping is set in telescope.lua
 -- set('n', '<leader>sd', require('telescope.builtin').find_files, { desc = 'Find Files in Telescope' })
+
+-- Open up NerdTree
+set('n', '<leader>r', ':NvimTreeToggle<CR>', { desc = 'Toggle NerdTree' })
+
+-- Open up Trouble page
+set('n', '<leader>p', ':TroubleToggle<CR>', { desc = 'Toggle Trouble Page' })
+
+-- Open up Fterm
+set('n', '<leader>t', ':FTermToggle<CR>', { desc = 'Toggle FTerm' })
