@@ -34,6 +34,7 @@ return {
                 'cssls', -- CSS
                 'quick_lint_js', -- Javscript
                 'tsserver', -- Javascript
+                'emmet_ls' -- emmet
 
             }})
 

@@ -23,8 +23,7 @@ require('config.lazy')
 -- mason.nvim
 -- mason-lspconfig.nvim
 -- trouble.nvim
--- goto-preview
--- nvim-navic
+-- goto-preview nvim-navic
 -- lsp_signature.nvim
 -- null-ls_nvim
 -- nvim-treesitter
