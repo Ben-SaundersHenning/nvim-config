@@ -51,6 +51,12 @@ return {
 
             vim.cmd('TSUpdate')
 
+            require('nvim-treesitter.configs').setup({
+                autotag = {
+                    enable = true,
+                }
+            })
+
         end
 
     },
