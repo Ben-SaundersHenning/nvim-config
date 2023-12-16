@@ -13,6 +13,9 @@ set('n', '<SPACE>', '<Nop>')
 -- Make the space key the mapleader
 vim.g.mapleader = " " -- space is the leader key
 
+-- Escape key remap to exit insert mode
+-- set('i', '<C>i', '<ESC>', { desc = 'Exit insert mode' })
+
 -- Configure 'ctrl + left/right' to move between tabs, in normal mode.
 -- desc is a description of the mapping
 set('n', '<C-[>', ':tabprevious<CR>', { desc = 'Previous tab' })
@@ -32,3 +35,6 @@ set('n', '<leader>p', ':TroubleToggle<CR>', { desc = 'Toggle Trouble Page' })
 
 -- Open up Fterm
 set('n', '<leader>t', ':FTermToggle<CR>', { desc = 'Toggle FTerm' })
+
+-- Format JSON
+set('n', '<leader>jfp', ':%!jq \'.\'<CR>', { desc = 'Format JSON in current buffer' })
