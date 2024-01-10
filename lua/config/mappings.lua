@@ -34,7 +34,7 @@ set('n', '<leader>r', ':NvimTreeToggle<CR>', { desc = 'Toggle NerdTree' })
 set('n', '<leader>p', ':TroubleToggle<CR>', { desc = 'Toggle Trouble Page' })
 
 -- Open up Fterm
-set('n', '<leader>t', ':FTermToggle<CR>', { desc = 'Toggle FTerm' })
+-- set('n', '<leader>t', ':FTermToggle<CR>', { desc = 'Toggle FTerm' })
 
 -- Format JSON
-set('n', '<leader>jfp', ':%!jq \'.\'<CR>', { desc = 'Format JSON in current buffer' })
+set('n', '<leader>jfp', ':%!jq --indent 4 \'.\'<CR>', { desc = 'Format JSON in current buffer' })

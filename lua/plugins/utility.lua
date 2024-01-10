@@ -106,22 +106,22 @@ return {
 
     },
 
-    -- FTerm: a floating terminal
-    {
-
-        'numToStr/FTerm.nvim',
-
-        config = function ()
-
-            require('FTerm').setup({
-
-                vim.api.nvim_create_user_command('FTermToggle', require('FTerm').toggle, { bang = true })
-
-            })
-
-        end
-
-    },
+    -- -- FTerm: a floating terminal
+    -- {
+    --
+    --     'numToStr/FTerm.nvim',
+    --
+    --     config = function ()
+    --
+    --         require('FTerm').setup({
+    --
+    --             vim.api.nvim_create_user_command('FTermToggle', require('FTerm').toggle, { bang = true })
+    --
+    --         })
+    --
+    --     end
+    --
+    -- },
 
     -- Autoclose HTML tags
     {
@@ -134,6 +134,6 @@ return {
 
         end
 
-    }
+    },
 
 }

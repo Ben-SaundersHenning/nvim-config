@@ -37,6 +37,7 @@ return {
                 'emmet_ls', -- emmet
                 'svelte', -- svelte
                 'vimls', -- vim
+                'fortls' -- fortran
 
             }})
 
