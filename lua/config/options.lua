@@ -67,6 +67,9 @@ opt.termguicolors = true
 -- An "Enhanced mode"
 opt.wildmenu = true
 
+-- Open splits below exisiting windows.
+opt.splitbelow = true
+
 -- Disable netrw, the default Vim file exploerer
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
